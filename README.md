@@ -6,9 +6,10 @@
 2. create s3
 3. create new iam role with AWS service "lambda" and give "AWSLambdaExecute"
 4. create lambda function and attach iam role
-5. paste this code in lambda function
-6. upload a csv file for testing.
-7. a new "agg" file will get created in s3 bucket
+5. add trigger as s3 if "PUT" files(as soon as file is uploaded in s3, lambda should trigger)
+6. paste this code in lambda function
+7. upload a csv file for testing.
+8. a new "agg" file will get created in s3 bucket
 
 ```bash
 import csv
