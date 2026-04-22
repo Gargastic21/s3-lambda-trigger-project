@@ -4,7 +4,7 @@
 
 1. login AWS
 2. create s3
-3. create new iam role with AWS service "lambda" and give "AWSLambdaExecute"
+3. create new iam role with AWS service "lambda" and give "AWSLambdaExecute" role.(this role has allowed cloudwatch logs and s3 get and put object access)
 4. create lambda function and attach iam role
 5. add trigger as s3 if "PUT" files(as soon as file is uploaded in s3, lambda should trigger)
 6. paste this code in lambda function
